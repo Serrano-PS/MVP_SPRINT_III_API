@@ -1,0 +1,86 @@
+[2023-09-05 21:31:12,428] ERROR log_exception() L1449 Exception on /export/URL_to_PDF [POST] - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1520, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1539, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1695, in make_response
+    raise TypeError(
+TypeError: The view function for 'export_URL_to_PDF' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-09-05 21:31:12,499] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:31:12] "[35m[1mPOST /export/URL_to_PDF HTTP/1.1[0m" 500 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:31:32,294] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:31:32] "OPTIONS /export/URL_to_PDF HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:31:32,302] ERROR log_exception() L1449 Exception on /export/URL_to_PDF [POST] - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1520, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1539, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1695, in make_response
+    raise TypeError(
+TypeError: The view function for 'export_URL_to_PDF' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-09-05 21:31:32,322] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:31:32] "[35m[1mPOST /export/URL_to_PDF HTTP/1.1[0m" 500 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:31:49,913] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 (Press CTRL+C to quit) - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:31:52,547] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:31:52] "GET /valves HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:31:53,394] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:31:53] "OPTIONS /export/URL_to_PDF HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:31:53,400] ERROR log_exception() L1449 Exception on /export/URL_to_PDF [POST] - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1520, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1539, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1723, in make_response
+    raise TypeError(
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1719, in make_response
+    rv = self.response_class.force_type(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\wrappers\response.py", line 268, in force_type
+    response = Response(*run_wsgi_app(response, environ))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\test.py", line 1237, in run_wsgi_app
+    app_rv = app(environ, start_response)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\local.py", line 454, in <lambda>
+    __call__ = _ProxyLookup(lambda self, *args, **kwargs: self(*args, **kwargs))
+                                                          ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Request' object is not callable
+The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a LocalProxy.
+[2023-09-05 21:31:53,457] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:31:53] "[35m[1mPOST /export/URL_to_PDF HTTP/1.1[0m" 500 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:32:38,706] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 (Press CTRL+C to quit) - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:32:44,835] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:32:44] "GET /valves HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:32:45,948] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:32:45] "OPTIONS /export/URL_to_PDF HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:32:47,513] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:32:47] "POST /export/URL_to_PDF HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:35:16,460] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 (Press CTRL+C to quit) - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:36:01,266] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:36:01] "GET /valves HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:36:02,454] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:36:02] "OPTIONS /export/URL_to_PDF HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:36:03,762] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:36:03] "POST /export/URL_to_PDF HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:37:46,515] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 (Press CTRL+C to quit) - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:37:50,453] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:37:50] "GET /valves HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:37:51,167] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:37:51] "OPTIONS /export/URL_to_PDF HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-05 21:37:52,474] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:37:52] "POST /export/URL_to_PDF HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 

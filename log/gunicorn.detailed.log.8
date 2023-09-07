@@ -1,0 +1,77 @@
+[2023-09-03 21:54:47,201] ERROR log_exception() L1449 Exception on /export/Prexview [POST] - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\Dados\Pós\engenharia-de-software-main\MVP\projeto_mvp_1\app.py", line 384, in export_to_PrexView
+    return response.json()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-09-03 21:54:47,216] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:54:47] "[35m[1mPOST /export/Prexview HTTP/1.1[0m" 500 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:57:59,917] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 (Press CTRL+C to quit) - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:58:07,303] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:58:07] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:58:07,384] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:58:07] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:58:07,408] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:58:07] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:58:07,425] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:58:07] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:58:07,845] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:58:07] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:58:07,879] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:58:07] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:58:14,817] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:58:14] "POST /export/Prexview HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:59:21,202] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 (Press CTRL+C to quit) - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:59:35,079] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:59:35] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:59:35,168] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:59:35] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:59:35,202] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:59:35] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:59:35,213] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:59:35] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:59:35,615] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:59:35] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:59:35,630] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:59:35] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:59:42,098] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:59:42] "POST /export/Prexview HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 22:00:16,419] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 (Press CTRL+C to quit) - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 22:00:19,230] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 22:00:19] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 22:00:19,332] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 22:00:19] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 22:00:19,387] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 22:00:19] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 22:00:19,404] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 22:00:19] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 22:00:19,754] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 22:00:19] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 

@@ -1,0 +1,76 @@
+[2023-09-03 21:47:43,479] ERROR log_exception() L1449 Exception on /export/Prexview [GET] - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\scaffold.py", line 109, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\Dados\Pós\engenharia-de-software-main\MVP\projeto_mvp_1\app.py", line 381, in export_to_PrexView
+    response = requests.post(url, json=payload, headers=headers)
+               ^^^^^^^^
+NameError: name 'requests' is not defined
+[2023-09-03 21:47:43,504] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:47:43] "[35m[1mGET /export/Prexview HTTP/1.1[0m" 500 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:48:05,690] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 (Press CTRL+C to quit) - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:48:10,680] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:48:10] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:48:10,731] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:48:10] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:48:10,751] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:48:10] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:48:10,761] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:48:10] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:48:11,015] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:48:11] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:48:11,045] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:48:11] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:48:17,812] ERROR log_exception() L1449 Exception on /export/Prexview [POST] - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\Dados\Pós\engenharia-de-software-main\MVP\projeto_mvp_1\app.py", line 381, in export_to_PrexView
+    response = requests.post(url, json=payload, headers=headers)
+               ^^^^^^^^
+NameError: name 'requests' is not defined
+[2023-09-03 21:48:17,820] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:48:17] "[35m[1mPOST /export/Prexview HTTP/1.1[0m" 500 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:49:19,396] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 (Press CTRL+C to quit) - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:49:23,167] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:49:23] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:49:23,233] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:49:23] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:49:23,253] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:49:23] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:49:23,265] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:49:23] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:49:23,664] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:49:23] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-03 21:49:23,679] INFO _log() L224  127.0.0.1 - - [03/Sep/2023 21:49:23] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 

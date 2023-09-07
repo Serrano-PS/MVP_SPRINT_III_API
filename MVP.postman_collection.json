@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "46e14109-244a-4aef-8891-a1aa5641484e",
+		"name": "MVP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26800193"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/valves",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"valves"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD Válvula de Bloqueio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome",
+							"value": "RETQ408BV",
+							"type": "text"
+						},
+						{
+							"key": "descricao",
+							"value": "Válvula de Bloqueio",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Gaveta",
+							"type": "text"
+						},
+						{
+							"key": "vazao",
+							"value": "15200",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/valve",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"valve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD Válvula de Retenção",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "descricao",
+							"value": "Válvula de Retenção",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "MVES_70",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Esfera",
+							"type": "text"
+						},
+						{
+							"key": "vazao",
+							"value": "12300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/valve",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"valve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDIT Válvula",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "descricao",
+							"value": "Válvula de Bloqueio",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "MVES_90",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "MACHO",
+							"type": "text"
+						},
+						{
+							"key": "vazao",
+							"value": "12000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/valve",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"valve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETAR",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/valve?nome=MVES_90",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"valve"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "MVES_90"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exportar  PDF",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000//export/pdf",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"export",
+						"pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exportar CSV",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000//export/csv",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"export",
+						"csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exportar XSLX",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000//export/xlsx",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"export",
+						"xlsx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exportar DOCX",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000//export/docx",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"export",
+						"docx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exportar XML",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000//export/xml",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"export",
+						"xml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exportar XML Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/export/URL_to_PDF?=localhost",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"export",
+						"URL_to_PDF"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "localhost"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

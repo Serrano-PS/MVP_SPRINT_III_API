@@ -2,4 +2,4 @@
 * linguist-vendored
 *.roff linguist-vendored=false
 
-*.py linguist-detectable=true
+# *.py linguist-detectable=true

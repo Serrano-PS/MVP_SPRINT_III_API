@@ -1,2 +1,3 @@
-# Auto detect text files and perform LF normalization
-*.python linguist-detectable=true
+
+* linguist-vendored
+*.roff linguist-vendored=false

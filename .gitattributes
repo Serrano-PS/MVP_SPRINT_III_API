@@ -1,5 +1,6 @@
 
-# * linguist-vendored
-# *.roff linguist-vendored=false
+* linguist-vendored
+*.roff linguist-vendored=false
 
+* linguist-detectable
 *.py linguist-detectable=true

@@ -58,13 +58,13 @@ Navegue até o diretório que contém o Dockerfile e o requirements.txt no termi
 Execute **como administrador** o seguinte comando para construir a imagem Docker:
 
 ```
-$ docker build -t MVP_SPRINT_III_API .
+$ docker build -t mvp_sprint_iii_api .
 ```
 
 Uma vez criada a imagem, para executar o container basta executar, **como administrador**, seguinte o comando:
 
 ```
-$ docker run -p 5000:5000 MVP_SPRINT_III_API
+$ docker run -p 5000:5000 mvp_sprint_iii_api
 ```
 
 Uma vez executando, para acessar a API, basta abrir o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador.

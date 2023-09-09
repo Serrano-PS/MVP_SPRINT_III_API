@@ -338,7 +338,7 @@
 			"response": []
 		},
 		{
-			"name": "Exportar XML Copy",
+			"name": "Exportar URL to PDF",
 			"request": {
 				"method": "POST",
 				"header": [],

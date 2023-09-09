@@ -180,6 +180,8 @@ def update_valve(form: ValveUpdateSchema):
 
 @app.get('/export/csv', tags=[valve_tag])
 def export_to_csv():
+    """Exportar os dados para um aquivo csv.
+    """
     session = Session()
     valves = session.query(Valve).all()
     output = io.StringIO()  # Cria um buffer de string para o CSV
@@ -207,6 +209,8 @@ def export_to_csv():
 
 @app.get('/export/pdf', tags=[valve_tag])
 def export_to_pdf():
+    """Exportar os dados para um aquivo pdf.
+    """
     session = Session()
     valves = session.query(Valve).all()
 
@@ -249,6 +253,8 @@ def export_to_pdf():
 
 @app.get('/export/xml', tags=[valve_tag])
 def export_to_xml():
+    """Exportar os dados para um aquivo xml.
+    """
     try:
         session = Session()
         valves = session.query(Valve).all()
@@ -268,6 +274,8 @@ def export_to_xml():
 
 @app.get('/export/xlsx', tags=[valve_tag])
 def export_to_xlsx():
+    """Exportar os dados para um aquivo xlsx.
+    """
     session = Session()
     valves = session.query(Valve).all()
 
@@ -323,7 +331,8 @@ def export_to_xlsx():
 
 @app.get('/export/docx', tags=[valve_tag])
 def export_to_docx():
-
+    """Exportar os dados para um aquivo docx.
+    """
     session = Session()
     valves = session.query(Valve).all()
 
@@ -373,6 +382,8 @@ RAPIDAPI_KEY = "9c1568c93emshab13bdece0f330dp1b9174jsn21d163e3c690"
 
 @app.post('/export/URL_to_PDF', tags=[valve_tag])
 def export_URL_to_PDF():
+    """Exportar uma pagina web (URL) para um aquivo pdf.
+    """
     url_to_pdf_api = "https://html2pdf-rocket.p.rapidapi.com/pdf"
 
     headers = {
